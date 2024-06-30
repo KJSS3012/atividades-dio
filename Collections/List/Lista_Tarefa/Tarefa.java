@@ -1,4 +1,4 @@
-package Collections.Ordenação_List.Lista_Tarefa;
+package Collections.List.Lista_Tarefa;
 
 public class Tarefa {
 

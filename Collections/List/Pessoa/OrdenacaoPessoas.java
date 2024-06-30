@@ -1,10 +1,10 @@
-package Collections.Ordenação_List.Ordenação_Pessoa;
+package Collections.List.Pessoa;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import Collections.Ordenação_List.Ordenação_Pessoa.Pessoa.ComparatorPorAltura;
+import Collections.List.Pessoa.Pessoa.ComparatorPorAltura;
 
 public class OrdenacaoPessoas {
 

@@ -1,4 +1,4 @@
-package Collections.Ordenação_Set.Convidados.Contatos;
+package Collections.Set.Contatos;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -48,5 +48,6 @@ public class Agenda {
         a.adicionarContato("JJ", 123123);
         a.adicionarContato("KK", 234234);
         a.adicionarContato("JJ", 5454545);
+        a.exibirContato();
     }
 }

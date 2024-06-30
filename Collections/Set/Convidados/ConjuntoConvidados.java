@@ -1,4 +1,4 @@
-package Collections.Ordenação_Set.Convidados;
+package Collections.Set.Convidados;
 
 import java.util.HashSet;
 import java.util.Set;

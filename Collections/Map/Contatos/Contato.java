@@ -1,12 +1,12 @@
-package Collections.Ordenação_Set.Convidados;
+package Collections.Map.Contatos;
 
-public class Convidado {
+public class Contato {
     private String nome;
-    private int codigoConvite;
+    private int numero;
 
-    public Convidado(String nome, int codigoConvite) {
+    public Contato(String nome, int numero) {
         this.nome = nome;
-        this.codigoConvite = codigoConvite;
+        this.numero = numero;
     }
 
     public String getNome() {
@@ -17,21 +17,19 @@ public class Convidado {
         this.nome = nome;
     }
 
-    public int getCodigoConvite() {
-        return codigoConvite;
+    public int getNumero() {
+        return numero;
     }
 
-    public void setCodigoConvite(int codigoConvite) {
-        this.codigoConvite = codigoConvite;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
-
-    
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + codigoConvite;
+        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
         return result;
     }
 
@@ -43,16 +41,18 @@ public class Convidado {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Convidado other = (Convidado) obj;
-        if (codigoConvite != other.codigoConvite)
+        Contato other = (Contato) obj;
+        if (nome == null) {
+            if (other.nome != null)
+                return false;
+        } else if (!nome.equals(other.nome))
             return false;
         return true;
     }
 
     @Override
     public String toString() {
-        return "Convidado [nome=" + nome + ", codigoConvite=" + codigoConvite + "]";
+        return "Contato [nome=" + nome + ", numero=" + numero + "]";
     }
 
-    
 }

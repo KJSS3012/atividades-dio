@@ -1,11 +1,11 @@
-package Collections.Ordenação_List.Carrinho_de_Compras;
+package Collections.Map.Estoque;
 
-public class Item {
+public class Produto {
     private String nome;
     private int quantidade;
-    private float preco;
+    private double preco;
 
-    public Item(String nome, int quantidade, float preco) {
+    public Produto(String nome, int quantidade, double preco) {
         this.nome = nome;
         this.quantidade = quantidade;
         this.preco = preco;
@@ -27,18 +27,17 @@ public class Item {
         this.quantidade = quantidade;
     }
 
-    public float getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(float preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
     @Override
     public String toString() {
-        return "[Nome: " + nome + ", Quantidade: " + quantidade + ", Preco: " + preco + "]";
+        return "Produto [nome=" + nome + ", quantidade=" + quantidade + ", preco=" + preco + "]";
     }
 
-    
 }
